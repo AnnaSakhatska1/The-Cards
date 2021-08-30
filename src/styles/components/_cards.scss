@@ -1,0 +1,27 @@
+.card {
+  @extend %cards-border;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    width: 28%;
+    height: 100%;
+    margin: 10px 20px;
+    padding: 10px;
+  }
+
+  &__list {
+    padding: 10px 0;
+  }
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card__content {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
